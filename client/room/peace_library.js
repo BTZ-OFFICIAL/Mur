@@ -75,14 +75,14 @@ export function create_teams() {
     // настройка инвентаря команд при их добавлении
     room.Teams.OnAddTeam.Add(function (team) {
         if (team.Name === teams.BLUE_TEAM_NAME) {
-            team.Inventory.Melee.Value = !blueHasNothing;
-            team.Inventory.Build.Value = !blueHasNothing;
-            team.Inventory.BuildInfinity.Value = !blueHasNothing;
+            team.Inventory.Melee.Value = false;
+            team.Inventory.Build.Value = false;
+            team.Inventory.BuildInfinity.Value = false;
         }
         else{
-            team.Inventory.Melee.Value = true;
-            team.Inventory.Build.Value = true;
-            team.Inventory.BuildInfinity.Value = true;
+            team.Inventory.Melee.Value = false;
+            team.Inventory.Build.Value = false;
+            team.Inventory.BuildInfinity.Value = false;
         }
     });
 

@@ -1,7 +1,7 @@
 {
   "ApiVersion": 2,
-  "Name": "PEACE",
-  "Description": "Мирный режим",
+  "Name": "Игра в кальмара",
+  "Description": "игровой режим",
   "StartClientVersion": 532,
   "MapLists": [
     {
